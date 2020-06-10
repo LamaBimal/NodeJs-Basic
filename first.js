@@ -1,4 +1,4 @@
-var operationObject = require('./add.js');
+var {sum,subtract} = require('./add.js');
 
 console.log("Hello world");
 var a = 10;
@@ -11,5 +11,5 @@ function greet(name){
 }
 
 greet("bimal");
-console.log(operationObject.sum(5,6));
-console.log(operationObject.subtract(6,3));
+console.log(sum(5,6));
+console.log(subtract(6,3));

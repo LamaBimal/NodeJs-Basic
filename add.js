@@ -6,8 +6,11 @@ function sum(a,b){
 function subtract(a, b){
     return a-b;
 }
-console.log(sum(1,2));
+// short-handed function
+exports.sum = (a,b) => (a+b);
+exports.subtract = (a,b)=> (a-b);
 // inline exporting tool -> module.exports
 //module.exports = sum;
-exports.subtract = subtract;
-exports.sum = sum;
+//exports.subtract = subtract;
+//exports.sum = sum;
+
